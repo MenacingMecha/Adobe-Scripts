@@ -36,8 +36,10 @@ function exportArtboard() {
 function getPNGOptions() {
     var pngSaveOpts = new ExportOptionsPNG24();
     pngSaveOpts.antiAliasing = true;
-    pngSaveOpts.transparency = true;
+    pngSaveOpts.transparency = false;
     pngSaveOpts.artBoardClipping = true;
+    pngSaveOpts.horizontalScale = 200.0;
+    pngSaveOpts.verticalScale = 200.0;
     return pngSaveOpts;
 }
 
